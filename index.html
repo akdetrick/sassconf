@@ -40,547 +40,61 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section data-markdown data-background="#222" class="sassy--color">
+				<section data-background="#000">
 					<script type="text/template">
-						# Let's talk about CSS*!
-						
-						*and Sass
-					</script>
-				</section>
-
-				<section class="meetup-intro" data-background="img/billboard.jpg" data-transition="fade">
-					<p style="padding-bottom: 8px;">I'm Adam Detrick and I work for Meetup</p>
-					<p style="padding-top: 0px;" class="sassy--color">adamd@meetup.com &nbsp;&nbsp;|&nbsp;&nbsp; @akdetrick</p>
-				</section>
-
-				<section data-background="#666">
-					<section data-background="#666">
-						<h2>an opening thought...</h2>
-					</section>
-					<section data-background="#fff">
-						<img src="img/takashi_tweet.png" style="width: 100%; border-width: 0;" />
-					</section>
-				</section>
-
-
-				<section data-background="#222">
-					<h3>CSS problems at Meetup</h3>
-					<ul>
-						<li class="fragment">
-							meetup is over 10 years old
-							<ul>
-								<li class="fragment">~1000 jsp files</li>
-								<li class="fragment">~180 scss files</li>
-								<li class="fragment">over 2000 instacnes of "color:" in compiled css</li>
-							</ul>
-						</li>
-						<li class="fragment">we hit the css limit in internet explorer</li>
-						<li class="fragment">lots of engineers; potential for inconsistency</li>
-						<li class="fragment">we went years without dedicated designers</li>
-					</ul>
-				</section>
-
-				<section data-background="#222">
-					<h3>Some CSS problems are not<br />unique to Meetup</h3>
-					<ul>
-						<li class="fragment">design consistency</li>
-						<li class="fragment">reinventing solutions to problems that <br />have already been solved</li>
-						<li class="fragment">overly-specific (and hard to reuse) CSS</li>
-						<li class="fragment">lack of a canonnical way to accomplish a given task</li>
-						<li class="fragment">existing code is hard to document</li>
-						<li class="fragment">unending cycle of code bloat</li>
-					</ul>
-				</section>
-
-				<section data-background="#222">
-					<h2>Let's throw out this crap and rewrite everything!</h2>
-				</section>
-
-				<section data-background="#222">
-					<img src="img/tsc_home.png" class="fragment" style="border-width: 0;" />
-				</section>
-
-				<section data-background="#222">
-					<img src="img/tsc1.png" style="border-width: 0;" />
-				</section>
-
-				<section data-background="#222">
-					<img src="img/tsc2.png" style="border-width: 0;" />
-				</section>
-
-				<section data-background="#222">
-					<h2>"It will only take <br />a few months"</h2>
-				</section>
-
-				<section data-background="#222">
-
-					<h2>Starting clean is<br />not a solution</h2>
-
-					<p class="fragment">... and it's frustrating</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Let's talk about botany for a moment
+						# A breif history of consistency problems @ Meetup
 					</script>
 				</section>
 
 				<section data-background="#000">
+				</section>
+
+				<section data-background="#9f1627" class="sq">
 					<section data-markdown>
 						<script type="text/template">
-							## Strangler Vines
-
-							Tropical plants that grow on host trees
+							### We'll send an awesome message to your members! You'll get a copy once the message is sent!  
+							### Neat, huh?
 						</script>
 					</section>
-					<section data-background="http://farm9.staticflickr.com/8205/8251868992_c9a35bf025_h.jpg" data-background-size="contain" data-background-transition="slide">
-						<p class="attribution">flickr/edrabbit</p>
-					</section>
-					<section data-background="http://farm4.staticflickr.com/3503/3828905896_e13528bbbf_b.jpg" data-background-size="contain" data-background-transition="slide">
-						<p class="attribution">flickr/nancybaym</p>
-					</section>
-					<section data-background="http://farm2.staticflickr.com/1040/956891083_ceba98c386_o.jpg" data-background-size="contain" data-background-transition="slide">
-						<p class="attribution">flickr/laughingface</p>
-					</section>
-					<section data-background="http://farm6.staticflickr.com/5018/5501316782_4be0a28ccf_b.jpg" data-background-size="contain" data-background-transition="slide">
-						<p class="attribution">flickr/anitagould</p>
+					<section data-markdown>
+						<script type="text/template">
+							### Please submit your message. You will receive an email copy to review.  
+							### You may keep it for your records.
+						</script>
 					</section>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## The Strangler Pattern
-						As introduced by [Martin Fowler](http://martinfowler.com/bliki/StranglerApplication.html)
-					</script>
-				</section>
-
-				<section data-markdown class="align-left">
-					<script type="text/template">
-						> "... create a new system around the edges of the old, letting it grow slowly until the old system is strangled."
-					</script>
-				</section>
-
-				<section data-markdown class="align-left">
-					<script type="text/template">
-						> "...  you should design [your new application] to make it easier to be strangled in the future."
-
-
-						> "Let's face it, all we are doing is writing tomorrow's legacy software today."
-					</script>
-				</section>
-
-				<section>
-					<h2>What about CSS?</h2>
-				</section>
-
-				<section>
-					<h2>A successful strangler application needs...</h2>
-					<ul>
-						<li class="fragment">A way to introduce a new system without breaking the current one</li>
-						<li class="fragment">The ability to make incremental changes to replace legacy code</li>
-					</ul>
-				</section>
-
-				<section>
-					<hgroup>
-						<h1>C<span class="fragment fade-out">SS</span></h1>
-						<h2 class="fragment">is for cascade</h2>
-					</hgroup>
-				</section>
-
-				<section>
-					<h2>Strangling CSS</h2>
-
-					<p>"Seed" the top of your cascade with a new CSS foundation</p>
-
-					<div class="document-figure">
-						<div class="document-line--focus" style="line-height: 5;">New CSS Foundation</div>
-						<div class="document-line">legacy</div>
-						<div class="document-line">legacy</div>
-						<div class="document-line">legacy</div>
-						<div class="document-line">legacy</div>
-						<div class="document-line">legacy</div>
-						<div class="document-line">legacy</div>
-						<div class="document-line">legacy</div>
+				<section data-background="#fff">
+					<div class="line-gutters">
+						<div class="align-left unit size1of2">
+							<h4 style="color: rgb(226,55,60);">Standard Colors</h4>
+							<ul class="strong">
+								<li style="color: rgba(0,0,0,0.95)">Primary Text (a:0.95)</li>
+								<li style="color: rgba(0,0,0,0.67)">Secondary Text(a:0.67)</li>
+								<li style="color: rgba(0,0,0,0.47)">Tertiary Text (a:0.47)</li>
+							</ul>
+						</div>
+						<div class="align-left unit lastUnit">
+							<h4 style="color:rgb(226,55,60);">Messaging Colors</h4>
+							<ul class="strong">
+								<li style="color: rgba(0,0,0,0.8)">Primary Text (a:0.8)</li>
+								<li style="color: rgba(0,0,0,0.41)">Secondary Text (a:0.41)</li>
+								<li style="color: rgba(0,0,0,0.21)">Tertiary Text (a:0.21)</li>
+							</ul>
+						</div>
 					</div>
 				</section>
 
-				<section>
-
-					<section data-transition="fade">
-						<div class="figureset">
-							<div class="figureset-figure document-figure">
-								<div class="document-line--focus" style="line-height: 23;">New CSS Foundation</div>
-							</div>
-							<div class="figureset-description">
-								<h3>Foundation?</h3>
-							</div>
-						</div>
-					</section>
-
-					<section data-transition="fade">
-						<div class="figureset">
-							<div class="figureset-figure document-figure">
-								<div class="document-line--focus" style="line-height: 4;">util (if pre-processing)</div>
-								<div class="document-line" style="line-height: 4;">element defaults</div>
-								<div class="document-line" style="line-height: 4;">layout system</div>
-								<div class="document-line" style="line-height: 4;">common patterns/components</div>
-								<div class="document-line" style="line-height: 4;">modifiers</div>
-							</div>
-							<div class="figureset-description">
-								<h4>Sass utilities</h4>
-								<p>vars, functions, etc.</p>
-							</div>
-						</div>
-					</section>
-
-					<section data-transition="fade">
-						<div class="figureset">
-							<div class="figureset-figure document-figure">
-								<div class="document-line" style="line-height: 4;">util (if pre-processing)</div>
-								<div class="document-line--focus" style="line-height: 4;">element defaults</div>
-								<div class="document-line" style="line-height: 4;">layout system</div>
-								<div class="document-line" style="line-height: 4;">common patterns/components</div>
-								<div class="document-line" style="line-height: 4;">modifiers</div>
-							</div>
-							<div class="figureset-description">
-								<h4>Custom "normalize" css</h4>
-								<p>handles element defaults, typography, etc.</p>
-							</div>
-						</div>
-					</section>
-
-					<section data-transition="fade">
-						<div class="figureset">
-							<div class="figureset-figure document-figure">
-								<div class="document-line" style="line-height: 4;">util (if pre-processing)</div>
-								<div class="document-line" style="line-height: 4;">element defaults</div>
-								<div class="document-line--focus" style="line-height: 4;">layout system</div>
-								<div class="document-line" style="line-height: 4;">common patterns/components</div>
-								<div class="document-line" style="line-height: 4;">modifiers</div>
-							</div>
-							<div class="figureset-description">
-								<h4>A basic layout system</h4>
-								<p>oocss grids, responsive grid system, susy, etc.</p>
-							</div>
-						</div>
-					</section>
-
-					<section data-transition="fade">
-						<div class="figureset">
-							<div class="figureset-figure document-figure">
-								<div class="document-line" style="line-height: 4;">util (if pre-processing)</div>
-								<div class="document-line" style="line-height: 4;">element defaults</div>
-								<div class="document-line" style="line-height: 4;">layout system</div>
-								<div class="document-line--focus" style="line-height: 4;">common patterns/components</div>
-								<div class="document-line" style="line-height: 4;">modifiers</div>
-							</div>
-							<div class="figureset-description">
-								<h4>Common markup &amp; style patterns</h4>
-								<p>media blocks, special lists, etc.</p>
-								<p><em>ie. <a href="http://codepen.io/akdetrick/full/gltbd">figureset</a></em></p>
-							</div>
-						</div>
-					</section>
-
-					<section data-transition="fade">
-						<div class="figureset">
-							<div class="figureset-figure document-figure">
-								<div class="document-line" style="line-height: 4;">util (if pre-processing)</div>
-								<div class="document-line" style="line-height: 4;">element defaults</div>
-								<div class="document-line" style="line-height: 4;">layout system</div>
-								<div class="document-line" style="line-height: 4;">common patterns/components</div>
-								<div class="document-line--focus" style="line-height: 4;">modifiers</div>
-							</div>
-							<div class="figureset-description">
-								<h4>Modifier classes</h4>
-								<p>simple, standard styling helpers</p>
-
-								<hr />
-
-								<div data-markdown>
-									<script type="text/template">
-										``` css
-										.leading-top { padding-top: $spacing; }
-										```
-
-										``` css
-										.ellipsize {
-											display: block;
-											overflow: hidden;
-											text-overflow: ellipsis;
-											white-space: nowrap;
-										 }
-										```
-									</script>
-							</div>
-						</div>
-					</section>
-
-				</section>
-
-				<section>
-
-					<p>What happens to legacy CSS?</p>
-
-					<div class="document-figure">
-						<div class="document-line" style="line-height: 5;">New CSS Foundation</div>
-						<div class="document-line--focus">legacy</div>
-						<div class="document-line--focus">legacy</div>
-						<div class="document-line--focus">legacy</div>
-						<div class="document-line--focus">legacy</div>
-						<div class="document-line--focus">legacy</div>
-						<div class="document-line--focus">legacy</div>
-						<div class="document-line--focus">legacy</div>
-					</div>
-				</section>
-
-				<section>
-					<section data-markdown data-transition="linear">
-						<script type="text/template">
-							### Growing your strangler vines
-						</script>
-					</section>
-
-					<section data-markdown data-transition="linear">
-						<script type="text/template">
-							#### Markup
-							
-							``` html
-							<div id="mySpecialThing">
-								<div id="specialThingHeading">
-									It's special.
-								</div>
-								<div id="specialThingContent">
-									<span>Really</span> special.
-								</div>
-							</div>
-							```
-
-							----
-
-							``` html
-							<h2>
-								It's not special.
-							</h2>
-							<p>
-								It just <em>makes sense</em> now.
-							</p>
-							```
-						</script>
-					</section>
-
-					<section data-markdown data-transition="linear">
-						<script type="text/template">
-						#### CSS
-						
-						``` css
-						#mySpecialThing {
-							/* ... bunch o' rules ... */
-						}
-						#specialThingHeading {
-							/* ... bunch o' rules ... */
-						}
-						#specialThingContent {
-							/* ... bunch o' rules ... */
-						}
-						#specialThingContent span {
-							/* ... bunch o' rules ... */
-						}
-						```
-
-						----
-
-						``` css
-						/* lol, nope */
-						```
-						</script>
-					</section>
-
-					<section data-transition="fade">
-						<h4>You're able to start deleting legacy CSS...</h4>
-						<div class="document-figure">
-							<div class="document-line" style="line-height: 5;">New CSS Foundation</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line--focus">deleted legacy component</div>
-						</div>
-					</section>
-
-					<section data-transition="fade">
-						<h4>As you repeat this process...</h4>
-						<div class="document-figure">
-							<div class="document-line" style="line-height: 5;">New CSS Foundation</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line--focus">deleted legacy component</div>
-						</div>
-					</section>
-
-					<section data-transition="fade">
-						<h4>More and more of the legacy CSS goes away...</h4>
-						<div class="document-figure">
-							<div class="document-line--focus" style="line-height: 5;">New CSS Foundation</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line">legacy</div>
-							<div class="document-line--focus">deleted legacy component</div>
-						</div>
-					</section>
-
-					<section data-transition="fade">
-						<h4>Eventually leaving you with something more like this:</h4>
-						<div class="document-figure">
-							<div class="document-line--focus" style="line-height: 5;">New CSS Foundation</div>
-							<div class="document-line" style="line-height: 3;">Custom CSS</div>
-						</div>
-					</section>
-
-				</section>
-
-				<section data-markdown data-background="#222">
-					<script type="tect/template">
-						## Building the foundation
-					</script>
-				</section>
-
-				<section data-markdown data-background="#222">
-					<script type="text/template">
-						### Design + Code 4 eva
-						
-						_design_ for systems, not for pages
-
-						----
-
-						_code_ for systems, not for pages
-					</script>
-				</section>
-
-				<section data-markdown data-background="#222">
-					<script type="text/template">
-						### Style tiles
-
-						[http://styletil.es/](http://styletil.es/)
-
-						![style tile](img/shane.png)
-					</script>
-				</section>
-
-				<section data-markdown data-background="#222">
-					<script type="text/template">
-						### Type speicimens
-
-						[meetup type specimen](http://meetup.github.io/sassquatch/specimen.html)
-
-					</script>
-				</section>
-
-				<section data-markdown data-background="#222">
-					<script type="text/template">
-						### Element defaults
-
-						![type specimen](img/specimen.png)
-
-						``` css
-						$headingFontStack: 'Whitney', helvetica, arial, sans-serif;
-
-						h1,h2,h3,h4,h5,h6 {
-							font-family: $headingFontStack;
-							color: $C_textPrimary;
-							margin: 0;
-							padding: 0;
-							padding-bottom: $baseline/2;
-							line-height: 1.1;
-							font-weight: $W_bold;
-							.inverted & {
-								color: $C_textPrimaryInverted;
-							}
-						}
-						```
-					</script>
-				</section>
-
-
-				<section data-markdown data-background="#9f1627" class="sq">
-					<script type="text/template">
-						## Meet Sassquatch
-					</script>
-				</section>
-
-				<section data-markdown data-background="#9f1627" class="sq">
-					<script type="text/template">
-						### A CSS foundation for Meetup
-
-						(we use this as our strangler vine)
-					</script>
-				</section>
-
-				<section>
-					<h3>Demo Time</h3>
-
-					<p><a href="http://meetup.github.io/sassquatch/">Live style guide (jekyll)</a></p>
-					<p><a href="http://meetup.github.io/sassquatch/doc_desktop/">Live style guide (hologram)</a></p>
-					<p><a href="http://meetup.github.io/sassquatch/specimen-event.html">Mock event details</a></p>
-					<p><a href="http://meetup.github.io/sassquatch/tests/brightness.html">Visual tests</a></p>
-				</section>
-
-				<section>
-					<h3>Let's look at some <a href="https://github.com/meetup/sassquatch">Code</a></h3>
-				</section>
-
-				<section>
-					<h3>_crustybase.scss</h3>
-				</section>
-
 				<section data-markdown>
 					<script type="text/template">
-						### Killing 300kb of CSS,<br />one page at a time
+						## [Standard typography](http://meetup.github.io/sassquatch/specimen.html)
 
-						``` jsp
-							<jsp:param name="isModernLayout" value="${true}" />
-						```
-						 -----
+							#### vs
 
-						 ``` jsp
-						 <c:choose>
-							 <c:when test="${not empty param.isModernLayout}">
-								 <c:set var="mainStylesheetPath" value="/style/meetup-modern.css" />
-							 </c:when>
-							 <c:otherwise>
-								 <c:set var="mainStylesheetPath" value="/style/meetup.css" />
-							 </c:otherwise>
-						 </c:choose>
-						 ```
+						## [Messaging typography](http://www.meetup.com/messaging/)
 					</script>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Where are we now?
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						### Added bonus
-
-						Sassquatch consolidated domain-specific knowledge
-					</script>
-				</section>
-
-				<section data-background="#666">
-					<h2>a closing thought...</h2>
-				</section>
-
-				<section data-background="#111">
-					<h1 class="sassy--color">Thanks!</h1>
-					<p>github.com/akdetrick/sassquatch-presentation</p>
-				</section>
 
 			</div>
 
@@ -603,7 +117,7 @@
 				previewLinks: true,
 
 				theme: "moon", // available themes are in /css/theme
-				transition: "concave", // default/cube/page/concave/zoom/linear/fade/none
+				transition: "fade", // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',

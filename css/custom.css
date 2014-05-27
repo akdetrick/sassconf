@@ -27,6 +27,52 @@ blockquote {
 	background: transparent !important;
 }
 
+
+/* {{{ OOCSS Grids (see https://github.com/stubbornella/oocss/wiki/grids) */
+.line:after,.line-gutters:after,.lastUnit:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";speak:none;}
+.line,.line-gutters{*zoom:1;}
+.unit{float:left; min-height: 1px;}
+.size1of1{float:none;}
+.size1of2{width:50%;}
+.size1of3{width:33.33333%;}
+.size2of3{width:66.66666%;}
+.size1of4{width:25%;}
+.size3of4{width:75%;}
+.size1of5{width:20%;}
+.size2of5{width:40%;}
+.size3of5{width:60%;}
+.size4of5{width:80%;}
+.lastUnit{display:table-cell;float:none;width:auto;*display:block;*zoom:1;_position:relative;_left:-3px;_margin-right:-3px;}
+/* }}} end oocss grids */
+
+/* {{{ extra grid divisions for meetup (accomodates "divideby='7'" box:col type layouts)*/
+.size1of7{width:14.28571%;}
+.size2of7{width:28.57142%;}
+.size3of7{width:42.85713%;}
+.size4of7{width:57.14284%;}
+.size5of7{width:71.42855%;}
+.size6of7{width:85.71426%;}
+/* }}} */
+
+/* {{{ Grid line with auto-gutters units (.line-gutters shares .line rules as defined above) */
+.line-gutters {
+	margin-bottom: 16px;
+	margin-right: 16px; /* pull last child to the right to meet the right edge of the page */
+}
+.line-gutters > .unit,
+.line-gutters > .lastUnit {
+	padding-right: 16px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* }}} */
+
+.strong {
+	font-weight: bold !important;
+}
+
 .align-left {
 	text-align: left;
 }
