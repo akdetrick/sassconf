@@ -13,9 +13,25 @@
 
 # Topic introduction
 
+## confessions of a sass hater
+- "Sass won't help you write better CSS; it creates an incentive to make the worst parts worse"
+	- nesting
+	- mixins duplicate rules, dissuade responsible one-to-many class definitions
+	- mixins may also discourage smart element defaults
+
+
+## warming up to sass
+- realization that sass is an indication of the maturity of our field
+	- package management
+	- optimization through pre-compilation
+	- polyfills
+	- variables
+	- functions
+	- calculations
+- as long as you realize that at the end of the day Sass compiles into a declarative language, you're golden.
+
 ## what "future tools" means
-Our profession is not mature yet. We do however, have more at our disposal 
-than ever before (modern browsers, standards, the rise of github, etc).
+We have more at our disposal than ever before (modern browsers, standards, the rise of github, etc).
 This talk won't be covering new technologies in web development; it's about
 the tools we can build right now to push our craft forward and hone the process
 of making a product for the web.
@@ -39,14 +55,17 @@ of making a product for the web.
 - maybe some photos
 - also show communications team
 
-
 ---
 
 # (bad) workflow examples
+TODO: chart of segmented, siloed development
 
 ---
 
 # (good) design-driven development
+TODO: chart of "design foundation" as the middle layer
+
+- "It's up to you how you want to define 'foundation' depending on your needs, but here's how we think of it at Meetup"
 
 ---
 
@@ -55,10 +74,6 @@ of making a product for the web.
 ---
 
 # foundation (sassquatch)
-
----
-
-# parts catalog / prototype tool
 
 ---
 
