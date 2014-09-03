@@ -69,8 +69,8 @@ TODO: chart of segmented, siloed development
 
 ---
 
-# TOOL #1: (good) design-driven development
-TODO: chart of "design foundation" as the middle layer
+# TOOL #1: (good) design-driven development with style foundations
+TODO: chart of "design vocabulary/foundation" as the middle layer
 
 # TOOL #2: style foundation
 - "It's up to you how you want to define 'foundation' depending on your needs, but here's how we think of it at Meetup"
@@ -82,11 +82,11 @@ TODO: chart of "design foundation" as the middle layer
 
 ---
 
-# TOOL #3: document flow
+# TOOL #3: document flow, rational css
 
 ---
 
-# TOOL #4: Rothko
+# TOOL #4: Rothko, because native apps matter
 
 ---
 
