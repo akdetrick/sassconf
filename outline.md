@@ -1,4 +1,4 @@
- Self introduction
+# SELF INTRO
 
 ## name, title, company
 ![billboard]()
@@ -11,9 +11,15 @@
 
 ---
 
-# Topic introduction
+# TOPIC INTRO
+
+## temptation to use stage as a personal megaphone
+I considered using this talk to push my own philosophy of best practices, but thought it might be better
+to share some of the most interesting tools we use at Meetup so you could decide for yourself how some of them
+might be useful for your organization or development process.
 
 ## confessions of a sass hater
+HEADLINE: "Sass won't fix this, let's focus on bigger problems"
 - "Sass won't help you write better CSS; it creates an incentive to make the worst parts worse"
 	- nesting
 	- mixins duplicate rules, dissuade responsible one-to-many class definitions
@@ -21,6 +27,7 @@
 
 
 ## warming up to sass
+After 4 years...
 - realization that sass is an indication of the maturity of our field
 	- package management
 	- optimization through pre-compilation
@@ -38,8 +45,13 @@ of making a product for the web.
 
 ---
 
-# meetup has designers?
+# yes, meetup has a design team now
 [oldthemes](https://docs.google.com/a/meetup.com/presentation/d/1d1l0ijsVgnhS9scNJzQXsYGP1ZB4JzMp0DTR08TQ3sw/edit#slide=id.gdd6f5325_320)
+- without a design team, this was not only ugly, it lacked good UX design.
+	- Allowing changes to text colors and background colors
+		- color blind orgs made horrible pages for users with normal vision
+		- orgs with normal vision made horrible pages for color blind users
+- tl;dr, if there were a design team involved in the decision, one of meetup's biggest missteps may not have happened
 
 ## dark ages of design at meetup
 - no central voice
@@ -48,12 +60,7 @@ of making a product for the web.
 - inconsistent UI
 - awful code
 - making the users do our job
-	- themes
 	- "the leadership team"
-
-## new(ish) design team at meetup!
-- maybe some photos
-- also show communications team
 
 ---
 
@@ -62,22 +69,28 @@ TODO: chart of segmented, siloed development
 
 ---
 
-# (good) design-driven development
+# TOOL #1: (good) design-driven development
 TODO: chart of "design foundation" as the middle layer
 
+# TOOL #2: style foundation
 - "It's up to you how you want to define 'foundation' depending on your needs, but here's how we think of it at Meetup"
+- why live style guides fail
+	- overly specific "legos" (there's a tool to fix that)
+	- documentation is hard to maintain (there's a tool to fix that)
+	- we don't live in a web-only world anymore (there's a tool to fix that)
+	- require cut-over rewrites (there's a tool to fix that)
 
 ---
 
-# colors (swatches)
+# TOOL #3: document flow
 
 ---
 
-# foundation (sassquatch)
+# TOOL #4: Rothko
 
 ---
 
-# legacy CSS advantages
+# TOOL #5: The Cascade
 Strangler vines!
 
 - cascade is a thing
@@ -87,3 +100,11 @@ Strangler vines!
 	- ... and it makes CSS the perfect candidate for strangling!
 
 ---
+
+
+
+
+# TODO:
+
+- why live styleguides fail
+
