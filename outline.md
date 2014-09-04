@@ -1,6 +1,7 @@
 # SELF INTRO
 
 ## name, title, company
+### TODO: find billboard photo (again)
 ![billboard]()
 
 ## i'm also on the company softball team
@@ -65,7 +66,7 @@ of making a product for the web.
 ---
 
 # (bad) workflow examples
-TODO: chart of segmented, siloed development
+### TODO: chart of segmented, siloed development
 
 ---
 
@@ -94,6 +95,8 @@ TODO: chart of "design vocabulary/foundation" as the middle layer
 - keeping the foundation low-level
 	- keeps updates infrequent, reduces regression risk
 	- keeps "interface" easy to understand
+
+### TODO: set up one-to-many demonstration with modifiers vs. extends
 
 ---
 
