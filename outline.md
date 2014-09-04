@@ -82,7 +82,18 @@ TODO: chart of "design vocabulary/foundation" as the middle layer
 
 ---
 
-# TOOL #3: document flow, rational css
+# TOOL #3: document flow, rational css, SMALL SHARP TOOLS
+- unix philosophy and CSS
+	- markup flexibility
+- interface first
+- smart element defaults
+- modifiers!
+	- about class semantics
+	- about concern separation
+- __extends rely on selectors, selectors rely on ancestry = markup + style tightly coupled__
+- keeping the foundation low-level
+	- keeps updates infrequent, reduces regression risk
+	- keeps "interface" easy to understand
 
 ---
 
