@@ -98,6 +98,22 @@ TODO: chart of "design vocabulary/foundation" as the middle layer
 
 ### TODO: set up one-to-many demonstration with modifiers vs. extends
 
+### Why is separation of content and presentation a best practice in the first place?
+It encourages loose coupling between style and content, allowing them to change independently
+
+### "Semantic" style modifiers via Sass extends:
+	- generates selectors that have a one-to-one (selector-to-element) relationship
+	- without applying a class to an element, you must create an ancestry-based selector (or ID)
+		- if the DOM changes, the style might break
+		- you ould use all IDs instead, but why
+	- As a result, the relationship between presentation and content is more likely to be tightly coupled, as the CSS needs to know about the DOM
+
+### "Unsemantic" modifier classes:
+	- class selectors have a one-to-many relationship with DOM elements
+	- the DOM ancestry can change, and the applied classes will still work
+	- the coupling between content and presentation is loose, because the CSS does not need to know about DOM structure
+
+
 ---
 
 # TOOL #4: Rothko, because native apps matter
