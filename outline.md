@@ -1,8 +1,10 @@
 # SELF INTRO
 
 ## name, title, company
-### TODO: find billboard photo (again)
-![billboard]()
+- meaning of design architect
+	- i'm in this role because of a new path we've taken in dev and design
+	- it's far from perfect yet, but we've learned a great deal on the way
+		- i'm here to share some of what we learned
 
 ## i'm also on the company softball team
 ![hnnnnggggg](http://tottara.kounatta.com/picture.php?/6309/search/62)
@@ -13,11 +15,6 @@
 ---
 
 # TOPIC INTRO
-
-## temptation to use stage as a personal megaphone
-I considered using this talk to push my own philosophy of best practices, but thought it might be better
-to share some of the most interesting tools we use at Meetup so you could decide for yourself how some of them
-might be useful for your organization or development process.
 
 ## confessions of a sass hater
 HEADLINE: "Sass won't fix this, let's focus on bigger problems"
@@ -68,12 +65,12 @@ of making a product for the web.
 # (bad) workflow examples
 ### TODO: chart of segmented, siloed development
 
+# GOOD workflow examples
+### TODO: chart of "design vocabulary/foundation" as the middle layer
+
 ---
 
-# TOOL #1: (good) design-driven development with style foundations
-TODO: chart of "design vocabulary/foundation" as the middle layer
-
-# TOOL #2: style foundation
+# TOOL #1: style foundation
 - "It's up to you how you want to define 'foundation' depending on your needs, but here's how we think of it at Meetup"
 - why live style guides fail
 	- overly specific "legos" (there's a tool to fix that)
@@ -81,9 +78,7 @@ TODO: chart of "design vocabulary/foundation" as the middle layer
 	- we don't live in a web-only world anymore (there's a tool to fix that)
 	- require cut-over rewrites (there's a tool to fix that)
 
----
-
-# TOOL #3: document flow, rational css, SMALL SHARP TOOLS
+## document flow, rational css, SMALL SHARP TOOLS
 - unix philosophy and CSS
 	- markup flexibility
 - interface first
@@ -113,14 +108,17 @@ It encourages loose coupling between style and content, allowing them to change 
 	- the DOM ancestry can change, and the applied classes will still work
 	- the coupling between content and presentation is loose, because the CSS does not need to know about DOM structure
 
+---
+
+# TOOL #2: Hologram
 
 ---
 
-# TOOL #4: Rothko, because native apps matter
+# TOOL #3: Rothko, because native apps matter
 
 ---
 
-# TOOL #5: The Cascade
+# TOOL #4: The Cascade
 Strangler vines!
 
 - cascade is a thing
