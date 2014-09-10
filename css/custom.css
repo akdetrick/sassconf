@@ -6,6 +6,12 @@ body .reveal h6 {
 	text-transform: none !important;
 }
 
+img {
+	border-width: 0 !important;
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
 li {
 	margin-top: 0.25em !important;
 }

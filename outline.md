@@ -108,13 +108,17 @@ It encourages loose coupling between style and content, allowing them to change 
 	- the DOM ancestry can change, and the applied classes will still work
 	- the coupling between content and presentation is loose, because the CSS does not need to know about DOM structure
 
+### WHY STYLEGUIDES FAIL...
+- doubling up on styleguide/api
+- docs go stale
+
 ---
 
 # TOOL #2: Hologram
+1. show hologram homepage
+2. show completed sassquatch docs
+3. show some code in sassquatch (tables, one html_example)
 
----
-
-# TOOL #3: Rothko, because native apps matter
 
 ---
 
@@ -129,10 +133,6 @@ Strangler vines!
 
 ---
 
+# TOOL #3: Rothko, because native apps matter
 
-
-
-# TODO:
-
-- why live styleguides fail
-
+---
