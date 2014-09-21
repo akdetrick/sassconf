@@ -136,3 +136,9 @@ Strangler vines!
 # TOOL #3: Rothko, because native apps matter
 
 ---
+
+
+
+
+TODO: http://shayfrendt.com/posts/upgrading-github-to-rails-3-with-zero-downtime/
+TODO: separate outputting from non-outputting sass
