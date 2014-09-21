@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="551px" height="146px" viewBox="0 0 551 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(10.000000, 12.000000)">
+                <rect id="Rectangle-8" stroke="#E59292" stroke-width="2" sketch:type="MSShapeGroup" x="0" y="0" width="528" height="123"></rect>
+                <g id="Rectangle-1-+-Rectangle-2-+-paragraph" transform="translate(21.000000, 21.000000)">
+                    <rect id="Rectangle-1" fill-opacity="0.649428216" fill="#4990E2" sketch:type="MSShapeGroup" x="0" y="0" width="486" height="30"></rect>
+                    <rect id="Rectangle-2" fill-opacity="0.733044611" fill="#FFDEA7" sketch:type="MSShapeGroup" x="0" y="30" width="486" height="21"></rect>
+                    <text id="paragraph" sketch:type="MSTextLayer" font-family="Consolas" font-size="18" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="198" y="20">paragraph</tspan>
+                    </text>
+                </g>
+                <g id="Rectangle-1-+-Rectangle-2-+-paragraph-2" transform="translate(21.000000, 72.000000)">
+                    <rect id="Rectangle-1" fill-opacity="0.649428216" fill="#4990E2" sketch:type="MSShapeGroup" x="0" y="0" width="486" height="30"></rect>
+                    <rect id="Rectangle-2" fill-opacity="0.733044611" fill="#FFDEA7" sketch:type="MSShapeGroup" x="0" y="30" width="486" height="21"></rect>
+                    <text id="paragraph" sketch:type="MSTextLayer" font-family="Consolas" font-size="18" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="198" y="20">paragraph</tspan>
+                    </text>
+                </g>
+                <rect id="Rectangle-3" fill-opacity="0.402824955" fill="#FFA2AE" sketch:type="MSShapeGroup" x="21" y="0" width="486" height="21"></rect>
+                <rect id="Rectangle-4" fill-opacity="0.402824955" fill="#FFA2AE" sketch:type="MSShapeGroup" x="507" y="0" width="21" height="123"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.402824955" fill="#FFA2AE" sketch:type="MSShapeGroup" x="0" y="0" width="21" height="123"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
