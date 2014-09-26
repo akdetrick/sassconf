@@ -52,8 +52,6 @@
 				<section data-transition="fade" data-background="img/softball.jpg">
 					<h3 class="overlay margin-top">*not an actual homerun</h3>
 				</section>
-				<section data-background="img/bowling.jpg">
-				</section>
 
 				<section data-background-color="rgba(0,0,0, 0.8)">
 					<h3>UI Design Architect?</h3>
@@ -237,16 +235,40 @@
 						<h3 class="fragment" style="color: #1b91ff;">(cascade)</h3>
 					</section>
 					<section>
-						TODO: recap what cascade is
+						<p class="margin-top"><code>ul .listThing .specialThing</code></p>
+						<table>
+							<thead>
+								<tr>
+									<th>Inline styles</th>
+									<th>IDs</th>
+									<th>Classes</th>
+									<th>Els &amp; pseudo-els</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0</td>
+									<td>0</td>
+									<td>2</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3 class="margin-top">Specificity: <strong>21</strong></h3>
 					</section>
 					<section>
-						TODO: define strangler application
+						<h3>Specificity &amp; the cascade</h3>
+						<div style="text-align: left;">
+							<p class="margin-top"><code>h2 { color: blue; } /* specificity: 1*/</code></p>
+							<p class="margin-top"><code>h2 { color: red; } /* specificty: 1 */</code></p>
+						</div>
 					</section>
-					<section>
-						TODO: the cascade makes it easy to strangle css
+					<section data-background="img/strangler.jpg">
+						<p class="overlay">meanwhile, in borneo</p>
 					</section>
-					<section>
-						TODO: before styles codepen
+					<section  data-background="img/strangler2.jpg">
+					</section>
+					<section data-background="img/strangled.jpg">
 					</section>
 					<section>
 						TODO: after styles codepen

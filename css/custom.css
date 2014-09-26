@@ -6,6 +6,24 @@ body .reveal h6 {
 	text-transform: none !important;
 }
 
+
+table {
+	margin: 0 auto !important;
+}
+th,
+td {
+	padding: 0.5em !important;
+	border-right: 1px solid white !important;
+	border-bottom: 1px solid white !important;
+}
+td {
+	border-bottom-width: 0 !important;
+}
+td:last-child,
+th:last-child {
+	border-right: 0 !important;
+}
+
 img {
 	border-width: 0 !important;
 	background: transparent !important;
