@@ -6,6 +6,9 @@ body .reveal h6 {
 	text-transform: none !important;
 }
 
+code {
+	max-height: 640px !important;
+}
 
 table {
 	margin: 0 auto !important;

@@ -190,6 +190,9 @@
 					<section data-background-color="rgba(36,27,62,0.8)">
 						<h2>Build small, sharp tools</h2>
 					</section>
+					<section data-background-color="rgba(36,27,62,0.8)">
+						TODO: dialog button alignment example
+					</section>
 					<section data-background-color="rgba(0,0,0,0.8)">
 						<h2>Static documentation is a lie waiting to happen</h2>
 					</section>
@@ -203,10 +206,56 @@
 						<p class="margin-top">github.com/trulia/hologram</p>
 					</section>
 					<section>
-						TODO: show sassquatch docs
+						TODO: syntax css
 					</section>
 					<section>
-						TODO: show markdown example
+<pre><code class="css">/*doc
+---
+title: Figureset
+name: figureset
+category: Layout
+---
+
+Figure with description. Similar to OOCSS "media block".
+
+```html_example
+<div class="figureset">
+   <div class="figureset-figure">
+      <img src="http://lorempixel.com/82/82/cats/" />
+   </div>
+   <div class="figureset-description">
+      <h4>This is a fluffy kitten</h4>
+      <p>Maybe not the fluffiest, but he'll do.</p>
+   </div>
+</div>
+```
+*/</code></pre>
+					</section>
+					<section>
+						<img src="img/figset.png" />
+					</section>
+					<section>
+<pre><code>/*doc
+---
+title: Flushing Elements
+name: flushModifiers
+category: Modifiers
+---
+
+Removes all margin and padding on an element for a given direction.
+
+Class          | Description
+---------------| ----------------------------------------------------
+`flush--top`   | Sets `margin` and `padding` to `0` for element top
+`flush--right` | Sets `margin` and `padding` to `0` for element right
+`flush--bottom`| Sets `margin` and `padding` to `0` for element bottom
+`flush--left`  | Sets `margin` and `padding` to `0` for element left
+`flush--all`   | Sets `margin` and `padding` to `0` for all sides
+
+*/</code></pre>
+					</section>
+					<section>
+						<img src="img/flushtable.png" />
 					</section>
 				</section>
 
@@ -215,16 +264,33 @@
 						<h2>Tool #3</h2>
 						<h1>Rothko</h1>
 						<p class="margin-top">Because cross-platform colors</p>
-						<p class="margin-top">github.com/meetup/rothko</p>
+						<!--<p class="margin-top">github.com/meetup/rothko</p>-->
 					</section>
 					<section>
-						TODO: something about jina from last year
+						<h4>colors.json + consumers for each platform</h4>
+						<h4 class="margin-top fragment">SassConf 2013 changed our minds...</h4>
+					</section>
+					<section>
+						<h3>because yaml colors!</h3>
+						<img class="fragment" style="max-height: 400px;" src="img/jina.jpg" />
+						<div class="fragment">
+							<h4>Choose your own Refactoring Adventure!</h4>
+							<p>Elyse Holladay, Jina Bolton</p>
+							<p><em>9am-1pm Friday, Resource Room 2nd Fl</em></p>
+						</div>
 					</section>
 					<section>
 						TODO: show yaml code
 					</section>
 					<section>
+						<h3>Distributions</h3>
+						<p>Sass, iOS, Android, SVG, ACO, Less, etc.</p>
+					</section>
+					<section>
 						TODO: show output
+					</section>
+					<section>
+						meetup blog!
 					</section>
 				</section>
 
@@ -290,12 +356,14 @@
 
 				<section>
 					<section>
+						TODO: fix this
 						<img class="fragment" src="img/energycheese.png" />
 						<h2 class="fragment">@akdetrick</h2>
 					</section>
 					<section>
 						<h2>Thank you, SassConf!</h2>
-						TODO: all the links
+						<p class="margin-top">github.com/meetup/sassquatch</p>
+						<p class="margin-top">github.com/trulia/hologram</p>
 					</section>
 				</section>
 
