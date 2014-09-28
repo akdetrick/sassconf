@@ -130,26 +130,31 @@
 						<img src="img/squatch.svg" />
 					</section>
 					<section data-background-color="rgba(36,27,62,0.8)">
-						<h2>CSS guidelines in Sassquatch</h2>
+						<h2>If you've seen one framework, you've seen them all</h2>
 					</section>
 					<section data-background-color="rgba(36,27,62,0.8)">
-						<h2>Set useful element defaults</h2>
-						<p class="margin-top"><span class="fragment fade-out">re</span>set all tag styles</p>
+						<h2>one-to-many selectors</h2>
 					</section>
 					<section data-background-color="rgba(36,27,62,0.8)">
-						<h2>Use one-to-many selectors</h2>
-					</section>
-					<section data-background-color="rgba(36,27,62,0.8)">
-						<div style="float: left; width: 18em; font-size: 0.6em;">
-							<ul class="margin-top" style="list-style-type: none; margin: 0; padding: 0;">
+						<div style="float: left; min-height: 200px; width: 18em; font-size: 0.6em; position: relative;">
+							<ul class="margin-top framgment fade-out" style="position: absolute; left: 0; top: 0; list-style-type: none; margin: 0; padding: 0;">
+								<li class="selector"><code>.specialClass,</code></li>
+								<li class="selector"><code>.foo a,</code></li>
+								<li class="selector"><code>.bar .baz p,</code></li>
+								<li class="selector"><code>.specialList &gt; li a,</code></li>
+								<li class="selector"><code>fieldset .formThing input</code></li>
+								<li style="padding-left: 1em;"><code>{ ...styles... }</code></li>
+							</ul>
+							<ul class="margin-top fragment" style="position: absolute; left: 0; top: 0; list-style-type: none; margin: 0; padding: 0;">
 								<li class="selector" style="background-color: #F5A623; color: #333;"><code>.specialClass,</code></li>
 								<li class="selector" style="background-color: #4A90E2"><code>.foo a,</code></li>
 								<li class="selector" style="background-color: #7ED321; color: #333;"><code>.bar .baz p,</code></li>
 								<li class="selector" style="background-color: #D0021B"><code>.specialList &gt; li a,</code></li>
 								<li class="selector" style="background-color: #BD10E0"><code>fieldset .formThing input</code></li>
+								<li style="padding-left: 1em;"><code>{ ...styles... }</code></li>
 							</ul>
 						</div>
-						<img style="float: left;"  class="unit lastUnit" src="img/extendsdoc.svg" />
+						<img style="float: left;"  class="fragment fade-in unit lastUnit" src="img/extendsdoc.svg" />
 						<br style="clear: both; line-height: 0px;" />
 					</section>
 					<section data-background-color="rgba(36,27,62,0.8)">
@@ -165,6 +170,10 @@
 						<h2>Embrace document flow</h2>
 						<img class="fragment current-visible" style="min-width: 880px;" src="img/docflowplain.svg" />
 						<img class="fragment current-visible" style="min-width: 880px;" src="img/docflow.svg" />
+					</section>
+					<section data-background-color="rgba(36,27,62,0.8)">
+						<h2>Set useful element defaults</h2>
+						<p class="margin-top"><span class="fragment fade-out">re</span>set all tag styles</p>
 					</section>
 					<section data-background-color="rgba(36,27,62,0.8)">
 						<h2>Be explicit, not implicit</h2>
@@ -191,10 +200,36 @@
 						<h2>Build small, sharp tools</h2>
 					</section>
 					<section data-background-color="rgba(36,27,62,0.8)">
-						TODO: dialog button alignment example
+						<img src="img/promptbox2.png" />
+						<p style="line-height: 2;" class="margin-top"><code class="lead-right">.promptBox</code> <code class="lead-right">.promptBox-titlebar</code> <code class="lead-right">.promptBox-content</code> <code class="lead-right">.promptBox-actions</code> <code class="lead-right">.promptBox-button--primary</code> <code class="lead-right">.promptBox-button--secondary</code></p>
+					</section>
+					<section data-background-color="rgba(36,27,62,0.8)">
+<pre><code>
+<div class="docBox">
+
+   <div class="docStripe--nav docSection">
+      <h4>Box title!</h4>
+   </div>
+
+   <div class="docSection">
+      <p>Box content</p>
+   </div>
+
+   <div class="docSection align-right">
+      <a class="button--primary" href="#">Confirm</a>
+      <a class="button" href="#">Nope</a>
+   </div>
+
+</div>
+</code></pre>
+					</section>
+					<section>
+						<blockquote class="fragment">"Build from the outside in"</blockquote>
+						<img src="img/dale.jpg" />
+						<p><em>-Dale Sande<br /> SassConf 2013</em></p>
 					</section>
 					<section data-background-color="rgba(0,0,0,0.8)">
-						<h2>Static documentation is a lie waiting to happen</h2>
+						<h2>Static (unautomated) documentation is a lie waiting to happen</h2>
 					</section>
 				</section>
 
@@ -235,6 +270,9 @@ Figure with description. Similar to OOCSS "media block".
 						<img src="img/figset.png" />
 					</section>
 					<section>
+						<img src="img/flushtable.png" />
+					</section>
+					<section>
 <pre><code>/*doc
 ---
 title: Flushing Elements
@@ -253,9 +291,6 @@ Class          | Description
 `flush--all`   | Sets `margin` and `padding` to `0` for all sides
 
 */</code></pre>
-					</section>
-					<section>
-						<img src="img/flushtable.png" />
 					</section>
 				</section>
 
@@ -280,10 +315,6 @@ Class          | Description
 						</div>
 					</section>
 					<section>
-						<h3>Distributions</h3>
-						<p>Sass, iOS, Android, SVG, ACO, Less, etc.</p>
-					</section>
-					<section>
 						<h4>colors.yaml</h4>
 <pre><code> social:
     name: "EXTERNAL"
@@ -299,6 +330,14 @@ Class          | Description
         instagram: [78,67,60,1]
         reddit: [206,227,248,1]
         wepay: *wepayBlue</code></pre>
+					</section>
+					<section>
+						<h3>Distributions</h3>
+						<p>Sass, iOS, Android, SVG, ACO, Less, etc.</p>
+					</section>
+					<section>
+						<h3>SVG?</h3>
+						<img src="img/swatches.svg" />
 					</section>
 					<section>
 							<h4>iOS</h4>
@@ -410,6 +449,11 @@ Class          | Description
 				</section>
 
 				<section>
+					<h3>I should mention Bower.</h3>
+					<p class="margin-top">bower.io</p>
+				</section>
+
+				<section>
 					<section>
 						<h2>@akdetrick</h2>
 						<img class="fragment" src="img/this.png" />
@@ -417,11 +461,12 @@ Class          | Description
 					<section>
 						<div style="text-align: left;">
 							<h2>Thank you, SassConf!</h2>
-							<p class="margin-top"><strong>github.com/akdetrick/sassconf</strong></p>
-							<p class="margin-top">github.com/meetup/sassquatch</p>
-							<p class="margin-top">github.com/meetup/meetup-swatches</p>
-							<p class="margin-top">github.com/trulia/hologram</p>
-							<p class="margin-top">making.meetup.com</p>
+							<p class="turl">github.com/<span class="ghurl">akdetrick/sassconf</span></p>
+							<p class="turl">github.com/<span class="ghurl">meetup/sassquatch</span></p>
+							<p class="turl">github.com/<span class="ghurl">meetup/meetup-swatches</span></p>
+							<p class="turl">github.com/<span class="ghurl">trulia/hologram</span></p>
+							<p class="turl"><span class="ghurl">bower.io</span></p>
+							<p class="turl"><span class="ghurl">making.meetup.com</span></p>
 						</div>
 					</section>
 				</section>
