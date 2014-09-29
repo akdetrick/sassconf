@@ -66,9 +66,9 @@
 
 				<section data-background-color="rgba(81,0,89, 0.4)">
 					<h2>Me, on the decision to use Sass @ Meetup</h2>
-					<p class="margin-top">"Sass will make things worse"</p>
-					<p class="margin-top">"Adding an extra layer of abstraction won't help us"</p>
-					<p class="margin-top">"Sass encourages bad selectors with nesting"</p>
+					<p class="margin-top fragment">"Sass will make things worse"</p>
+					<p class="margin-top fragment">"Adding an extra layer of abstraction won't help us"</p>
+					<p class="margin-top fragment">"Sass encourages bad selectors with nesting"</p>
 				</section>
 
 				<section data-background-color="rgba(81,0,89, 0.4)">
@@ -98,11 +98,12 @@
 					</section>
 					<section data-transition="linear">
 						<ul>
-							<li class="fragment">no central voice (copy or design)</li>
+							<li class="fragment">no central design voice</li>
 							<li class="fragment">you could tell which team built a feature</li>
-							<li class="fragment">inconsistent UI components</li>
+							<li class="fragment">inconsistent basic UI components</li>
 							<li class="fragment">lack of design consistency often left the users to do our job</li>
 							<li class="fragment">horribly bloated CSS</li>
+							<li class="fragment">CSS trust death spiral</li>
 							<li class="fragment">we regularly hit the 288kb per-stylesheet IE limit*</li>
 						</ul>
 						<p class="fragment margin-top">*Meetup was already 10 years old in 2012</p>
@@ -173,14 +174,14 @@
 					</section>
 					<section data-background-color="rgba(36,27,62,0.8)">
 						<h2>Set useful element defaults</h2>
-						<p class="margin-top"><span class="fragment fade-out">re</span>set all tag styles</p>
+						<p class="margin-top"><span class="fragment fade-out">re</span>set CSS</p>
 					</section>
 					<section data-background-color="rgba(36,27,62,0.8)">
 						<h2>Be explicit, not implicit</h2>
 						<div class="fragment">
 							<h5 class="margin-top">clever:</h5>
 <pre><code data-trim>
-.unit &gt; .docSection:first-child {
+.unit .docSection:first-child {
 	padding-top: $spacing;
 	border-top: 0;
 }
