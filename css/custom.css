@@ -1,9 +1,15 @@
+/* THIS IS WHY OVERQUALIFIED SELECTORS LIKE ".reveal thing" ARE AWFUL */
+
 body .reveal h2,
 body .reveal h3,
 body .reveal h4,
 body .reveal h5,
 body .reveal h6 {
 	text-transform: none !important;
+}
+
+blockquote {
+	width: 82% !important;
 }
 
 code {
